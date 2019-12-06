@@ -1,0 +1,166 @@
+<div class="card">
+  <div class="card-header bg-info text-white">
+    Rate Review
+  </div>
+  <div class="card-body">
+
+    <form [formGroup]="rateForm" (ngSubmit)="onSubmit()">
+      <label class="font-weight-bold" for="basic-url">Description</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+          formControlName="description">
+      </div>
+
+      <label class="font-weight-bold" for="exampleFormControlSelect1">SIC Code</label>
+      <select class="form-control" id="exampleFormControlSelect1" formControlName="sicCode">
+        <option value="5812 Restaurant">5812 Restaurant</option>
+        <option value="4613 Restaurant">4613 Restaurant</option>
+        <option value="3568 Restaurant">3568 Restaurant</option>
+      </select>
+
+      <div class="row">
+        <div class="col-7">
+          <div formGroupName="rateDollar">
+            <div class="input-group mb-3 mt-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img
+                    src="../.././../assets/img/vias-changestoverfiedbyvisa.jpg" alt="mastercard" height="15"
+                    width="20"></span>
+                <span class="input-group-text" id="basic-addon1">$</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Dolar" formControlName="visaCard"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img src="../.././../assets/img/mastercard_logo.0.png"
+                    alt="mastercard" height="15" width="20"></span>
+                <span class="input-group-text" id="basic-addon1">$</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Dolar" formControlName="masterCard"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img
+                    src="../.././../assets/img/Discover-logo-e1416429693676.jpg" alt="mastercard" height="15"
+                    width="20"></span>
+                <span class="input-group-text" id="basic-addon1">$</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Dolar" formControlName="discover"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img
+                    src="../.././../assets/img/American-Express-copy.png" alt="mastercard" height="15"
+                    width="20"></span>
+                <span class="input-group-text" id="basic-addon1">$</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Dolar" formControlName="americanExpress"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+          <label class="font-weight-bold" for="basic-url">Total Volume</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">$</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+              formControlName="totalVolume">
+          </div>
+
+          <label class="font-weight-bold" for="basic-url">Avg Ticket</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">$</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+              formControlName="avgTicket">
+          </div>
+          <label class="font-weight-bold" for="basic-url">Current Fees</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">$</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+              formControlName="currentFees">
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div formGroupName="ratePound">
+            <div class="input-group mb-3 mt-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img
+                    src="../.././../assets/img/vias-changestoverfiedbyvisa.jpg" alt="visaCard" height="15"
+                    width="20"></span>
+                <span class="input-group-text" id="basic-addon1">#</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Pound" formControlName="visaCard"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img src="../.././../assets/img/mastercard_logo.0.png"
+                    alt="mastercard" height="15" width="20"></span>
+                <span class="input-group-text" id="basic-addon1">#</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Pound" formControlName="masterCard"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img
+                    src="../.././../assets/img/Discover-logo-e1416429693676.jpg" alt="Discover" height="15"
+                    width="20"></span>
+                <span class="input-group-text" id="basic-addon1">#</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Pound" formControlName="discover"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img
+                    src="../.././../assets/img/American-Express-copy.png" alt="mastercard" height="15"
+                    width="20"></span>
+                <span class="input-group-text" id="basic-addon1">#</span>
+              </div>
+              <input type="number" class="form-control" placeholder="Pound" formControlName="americanExpress"
+                aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+          <label class="font-weight-bold" for="basic-url">Total Transactions</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">#</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+              formControlName="totalTransaction">
+          </div>
+          <label class="font-weight-bold" for="basic-url">Current Rate</label>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+              formControlName="currentRate">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">%</span>
+            </div>
+          </div>
+          <label class="font-weight-bold" class="font-weight-bold" for="basic-url">Current Amex Fees</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">$</span>
+            </div>
+            <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+              formControlName="currentAmmexFees">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+</div>

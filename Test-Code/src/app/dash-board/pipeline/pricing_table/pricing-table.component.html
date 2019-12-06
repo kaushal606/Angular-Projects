@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header bg-info text-white">
+    Select Pricing Options
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Name<i style="margin-left: 70%;" class="fa fa-fw fa-sort"></i></th>
+          <th scope="col">Saving<i class="fa fa-fw fa-sort-down ml-2"></i></th>
+          <th scope="col">Residuals<i class="fa fa-fw fa-sort-down ml-2"></i></th>
+          <th scope="col">Rate<i class="fa fa-fw fa-sort ml-2"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of tableData">
+          <th>{{data.name}}</th>
+          <td>${{data.savings}}</td>
+          <td>${{data.residuals}}</td>
+          <td>{{data.rate}}%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+{
+    "description": "March 2016",
+    "sicCode": "4613 Restaurant",
+    "totalVolume": 104731.51,
+    "totalTransaction": 4715,
+    "avgTicket": 22.21,
+    "currentRate": 3.56,
+    "currentFees": 3728.90,
+    "currentAmexFees": 798.43,
+    "rateDollar": {
+        "visa": 35032.81,
+        "masterCard": 28057.36,
+        "discover": 19851.03,
+        "americanExpress": 21790.31
+    },
+    "ratePound": {
+        "visa": 1510,
+        "masterCard": 1476,
+        "discover": 712,
+        "americanExpress": 1017
+    }
+}

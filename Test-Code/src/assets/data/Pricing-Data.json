@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Interchange+.10% and $0.10",
+        "savings": "1,331.33",
+        "residuals": "261.49",
+        "rate": "2.29"
+    },
+    {
+        "name": "Interchange+.10% and $0.10",
+        "savings": "1,298.33",
+        "residuals": "287.51",
+        "rate": "2.32"
+    },
+    {
+        "name": "Interchange+.10% and $0.10",
+        "savings": "1,331.33",
+        "residuals": "320.68",
+        "rate": "2.36"
+    },
+    {
+        "name": "2.50% Flat",
+        "savings": "958.33",
+        "residuals": "351.49",
+        "rate": "2.75"
+    },
+    {
+        "name": "2.60% Flat",
+        "savings": "721.75",
+        "residuals": "261.49",
+        "rate": "2.79"
+    },
+    {
+        "name": "6 Tiered w/Reg Debit",
+        "savings": "569.36",
+        "residuals": "417.52",
+        "rate": "3.09"
+    }
+]
